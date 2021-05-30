@@ -1,10 +1,17 @@
-import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import GameOver from "./pages/GameOver";
+import HighScores from "./pages/HighScores";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact component={Home} path="/" />
+        <Route exact component={HighScores} path="/high-scores" />
+        <Route exact component={GameOver} path="/game-over" />
+      </Switch>
+    </Router>
   );
 };
 
