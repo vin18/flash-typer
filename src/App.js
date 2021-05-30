@@ -10,7 +10,7 @@ import SignUp from "./pages/SignUp";
 const App = () => {
   return (
     <Router>
-      <div className="bg-gradient-to-br from-red-50 to-gray-100">
+      <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-gray-100">
         <Header />
         <main className="container mx-auto p-4" style={{ minHeight: "88vh" }}>
           <Switch>

@@ -6,14 +6,14 @@ const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <header className="bg-gray-100 px-1 shadow-sm">
+    <header className="bg-gradient-to-br from-red-50 to-gray-100 px-1 shadow-sm">
       <nav className="max-w-6xl mx-auto p-3 flex items-center justify-between">
         <div>
           <Link to="/" className="flex items-center">
-            <h1 className="mr-1 text-3xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-red-500  to-red-600">
+            <FlashLogo />
+            <h1 className="ml-1 text-3xl font-bold  text-transparent bg-clip-text bg-gradient-to-r from-red-500  to-red-600">
               Flash Typer{" "}
             </h1>
-            <FlashLogo />
           </Link>
         </div>
 
